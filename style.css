@@ -1,0 +1,574 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 24rem;
+    background-color: #000;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #161618;
+    overflow: auto;
+    margin: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.music-player {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    flex-direction: column;
+    background-color: #161618;
+    height: 112px;
+    justify-content: center;
+    padding: 8px 12px 8px 12px;
+    gap: 10px;
+}
+
+.nav-options {
+    padding: 4px 12px 4px 12px;
+    opacity: 0.5;
+    transition: all linear 0.2s;
+}
+
+.nav-options a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-options i {
+    margin-right: 20px;
+    font-size: 1.3rem;
+}
+
+
+.nav-options:hover {
+    opacity: 1;
+}
+
+.library {
+    height: 100%;
+    background-color: #161618;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.lib-nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.lib-nav .icons i{
+    opacity: 0.7;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    transition: all linear 0.2s;
+    font-size: 1.3rem;
+}
+
+.lib-nav .icons i:hover {
+    opacity: 1;
+}
+
+.lib-options {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    opacity: 0.7;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+    transition: all linear 0.2s;
+}
+
+.lib-options:hover {
+    opacity: 1;
+    
+}
+
+.lib-options img {
+    width: 1.3rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.lib-boxes {
+    font-weight: 500;
+    display: flex;
+    margin: 1rem 0;
+    gap: 10px;
+}
+
+.box {
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    background-color: #2425266a;
+    border-radius: 3rem;
+    transition: all linear 0.3s;
+}
+
+.box a {
+    font-size: 0.9rem;
+}
+
+.box:hover {
+    background-color: #2f3032;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.cards {
+    padding: 10px;
+    height: 380px;
+    overflow: auto;
+}
+
+.card {
+    background-color: #242526;
+    padding: 1rem 1.25rem 1.5rem 1.25rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card-btn {
+    border: none;
+    background-color: #fff;
+    border-radius: 3rem;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    transition: all linear 0.1s;
+    width: fit-content;
+}
+
+.card-btn a {
+    color: #000;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.card-title {
+    margin-bottom: 2.6rem;
+}
+
+.card-title .heading {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.card-title .description {
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.card-btn:hover {
+    scale: 1.06;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #161618;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    z-index: 10;
+}
+
+.sticky-nav-icons img {
+    background-color: #242526a7;
+    border-radius: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-right: 0.25rem;
+    width: 1rem;
+    transition: all linear 0.1s;
+}
+
+.sticky-nav-icons img:hover {
+    background-color: #2f3032;
+}
+
+.sticky-nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.sticky-nav-options div {
+    margin-left: 0.7rem;
+}
+
+
+.install {
+    background-color: #000;
+    padding: 0.4rem 0.9rem;
+}
+
+.install a {
+    color: white;
+}
+
+.install a i {
+    font-size: 0.9rem;
+    padding-right: 0.35rem;
+}
+
+
+.sticky-nav-options .icons {
+    background-color: #2425266a;
+    padding: 0.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.sticky-nav-options .icons:hover {
+    background-color: #2f3032;
+}
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .hide1 {
+        display: none;
+    }
+}
+
+.main-cards {
+    padding: 2rem;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    margin: 0;
+}
+
+.main-card {
+    position: relative;
+    background-color: #2425266a;
+    border-radius: 0.6rem;
+    width: 200px;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+
+.main-card:hover {
+    background-color: #242526;
+}
+
+.main-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.main-card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.main-card-desc {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+}
+
+.footer-links {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-details {
+    margin: 1.5rem;
+}
+
+.footer-details p {
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+.footer-details p:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-icons {
+    display: flex;
+    width: 25%;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+
+.footer-icons div {
+    padding: 0.5rem;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #2425266a;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+
+.footer-icons div:hover {
+    background-color: #242526;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    
+    width: 95%;
+    height: 1px;
+    background-color: #2f3032;
+    opacity: 0.9;
+
+}
+
+.privacy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 2rem 5.5rem 2rem;
+    flex: wrap;
+    gap: 100px;
+}
+
+
+.privacy-links {
+    display: flex;
+    justify-content: left;
+    width: 55%;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 3.5rem 2rem 2rem 0rem;
+}
+
+.privacy-links a {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all linear 0.2s;
+}
+
+.privacy-links a:hover {
+    opacity: 1;
+}
+
+
+.copyright {
+    margin: 3.5rem 2rem 2rem 0rem;
+}
+
+.album {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    background-color: #000;
+    align-items: center;
+}
+
+
+
+.album-img {
+    width: 50px;
+    padding: 0.9rem;
+
+}
+
+.album i {
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+.album i:hover {
+    opacity: 1;
+}
+
+.album-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-desc a {
+    margin: 5px;
+}
+
+.album-desc a:hover {
+    text-decoration: underline;
+}
+
+.album-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.album-creator {
+    font-weight: 600;
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.album-img img {
+    width: 100%;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.playback-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.playback-options img {
+    width: 270px;
+}
+
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+}
+
+
+.play-btn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    max-width: 0px;
+    transition: all linear 0.1s;
+    opacity: 0;
+}
+
+.play-btn:hover {
+    scale: 1.08;
+}
+
+.main-card:hover .play-btn {
+    max-width: 70px;
+    opacity: 1;
+}
+
+.playback-controls {
+    display: flex;
+    height: 50%;
+    gap: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.playback-controls img {
+    height: 40%;
+    opacity: 0.5;
+    transition: all linear 0.1s;
+}
+
+.playback-controls img:hover {
+    opacity: 1;
+}
+
+.playback-controls .play {
+    height: 85%;
+    opacity: 1;
+    transition: all linear 0.1s;
+
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    cursor: pointer; 
+    width: 30rem;
+    height: 3px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

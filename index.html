@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./public/assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-options" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i> <a href="#">Home</a>
+                </div>
+                <div class="nav-options">
+                    <i class="fa-solid fa-magnifying-glass"></i> <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="lib-nav">
+                    <div class="lib-options">
+                        <img src="./public/assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-regular fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <a href="#">Playlists</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">Artists</a>
+                    </div>
+                    <div class="box">
+                        <a href="#">Podcasts & Shows</a>
+                    </div>  
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-title">
+                            <p class="heading">Create your first playlist</p>
+                            <p class="description">It's easy, we'll help you</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#">Create playlist</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <p class="heading">Let's find some podcasts to follow</p>
+                            <p class="description">We'll keep you updated on new episodes</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#">Browse podcasts</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <p class="heading">Your Ultimate Soundtrack</p>
+                            <p class="description"> Discover, Stream, and Jam</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="#">Discover playlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./public/assets/backward_icon.png" alt="" >
+                    <img class="hide" src="./public/assets/forward_icon.png" alt="" >
+                </div>
+                <div class="sticky-nav-options">
+                    <div class="card-btn hide">
+                        <a href="#">Explore Premium</a>
+                    </div>
+                    <div class="card-btn install hide1">
+                        <a href="#"><i class="fa-regular fa-circle-down"></i>Install App</a>
+                    </div>
+                    <div class="notification icons">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="user icons">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cards">
+                    <h2>Recently Played</h2>
+                    <div class="card-container">
+                        <div class="main-card">
+                            <img src="./public/assets/card1img.jpeg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Top 50 - Global</p>
+                            <p class="main-card-desc">Your daily updates of the most played...</p>
+                        </div>
+                    </div>
+                    <h2>Popular albums</h2>
+                    <div class="card-container">
+                        <div class="main-card">
+                            <img src="./public/assets/card2img.jpeg" alt="">
+                            <img class="play-btn OnMyWay" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">On My Way</p>
+                            <p class="main-card-desc">Alan Walker</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card3img.jpeg" alt="">
+                            <img class="play-btn Cheques" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Cheques</p>
+                            <p class="main-card-desc">Shubh</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card4img.jpg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">The Horror Show..</p>
+                            <p class="main-card-desc">TMV Studios</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card5.jpg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Shape of you</p>
+                            <p class="main-card-desc">Ed Sheeran</p>
+                        </div>
+                    </div>
+                    <h2>Featured Charts</h2>
+                    <div class="card-container">
+                        <div class="main-card">
+                            <img src="./public/assets/card5img.jpeg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Top Songs - Glo..</p>
+                            <p class="main-card-desc">Your Weekly update of the most played...</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card6img.jpeg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Top Songs - Ind..</p>
+                            <p class="main-card-desc">Your Weekly update of the most played...</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card7img.jpg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Top Songs - Fra..</p>
+                            <p class="main-card-desc">Your Weekly update of the most played...</p>
+                        </div>
+                        <div class="main-card">
+                            <img src="./public/assets/card8img.jpg" alt="">
+                            <img class="play-btn" src="./public/assets/play.png" alt="">
+                            <p class="main-card-title">Top Songs - US..</p>
+                            <p class="main-card-desc">Your Weekly update of the most played...</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-details">
+                        <h3>Company</h3>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the Record</p>
+                    </div>
+                    <div class="footer-details">
+                        <h3>Communities</h3>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>vendors</p>
+                    </div>
+                    <div class="footer-details">
+                        <h3>Useful links</h3>
+                        <p>Free Mobile App</p>
+                    </div>
+                </div>
+                <div class="footer-icons">
+                    <div class="insta">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="fb">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="horizontal">
+                <div class="line"></div>
+            </div>
+            
+            <div class="privacy">
+                <div class="privacy-links">
+                    <a href="#">Legal</a>
+                    <a href="#">Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                <div class="copyright" style="opacity: 0.8;">
+                    ©2023 Spotify AB
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <div class="album-img">
+                    <img src="./public/assets/card5.jpg" alt="">
+                </div>
+                <div class="album-desc">
+                    <a class="album-title" href="#">Shape of you</a>
+                    <a class="album-creator" href="#">Ed Sheeran</a>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+            </div>
+            <div class="playback-bar">
+                <div class="playback-controls">
+                    <img src="./public/assets/player_icon1.png" alt="">
+                    <img src="./public/assets/player_icon2.png" alt="">
+                    <img class="play" src="./public/assets/player_icon3.png" alt="">
+                    <img src="./public/assets/player_icon4.png" alt="">
+                    <img src="./public/assets/player_icon5.png" alt="">
+                </div>
+                <div class="progress">
+                    <input class="progress-bar" type="range" id="points" name="points" min="0" max="100">
+                </div>
+            </div>
+            <div class="playback-options">
+                <img src="./public/assets/player.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
